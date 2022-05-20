@@ -12,7 +12,7 @@ app.config['DEBUG'] = True
 def getPayload(payload):
     if request.headers.get("Authorization") == "CachorroZika":
         engine = create_engine('postgresql://postgres:123456@serverioutility.hopto.org/teste')
-        engine.execute(f"INSERT INTO cachorro (nome) VALUES ('{payload}'")
+        engine.execute(f"INSERT INTO cachorro (nome) VALUES ('{payload}')")
         return "deu bom"
     return "deu ruim"
 
