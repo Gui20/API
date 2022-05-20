@@ -14,6 +14,6 @@ def getUSD(nome, idade):
     return "deu bom"
 
 
-port = int(os.environ.get('PORT', 5050))
-app.run(host="0.0.0.0", port=port)
+# port = int(os.environ.get('PORT', 5050))
+# app.run(host="0.0.0.0", port=port)
 
