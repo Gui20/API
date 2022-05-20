@@ -1,1 +1,1 @@
-web: gunicorn -b $PORT payload_API:app
+web: gunicorn payload_API:app
