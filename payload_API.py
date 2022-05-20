@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.config['DEBUG'] = True
 
 
-@app.route('/api/v1/<string:nome>&<string:idade>', methods=['GET', 'POST'])
+@app.route('/api/v1/<string:payload>', methods=['GET', 'POST'])
 def getPayload(payload):
     if request.headers.get("Authorization") == "CachorroZika":
         engine = create_engine('postgresql://postgres:123456@serverioutility.hopto.org/teste')
