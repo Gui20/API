@@ -19,10 +19,10 @@ def getPayload(payload):
 
         # engine = create_engine('postgresql://postgres:123456@serverioutility.hopto.org/teste')
         # engine.execute(f"INSERT INTO cachorro (nome) VALUES ('{payload}')")
-        return jsonify({"payload": payload})
+        return jsonify({"payload": data})
     return "deu ruim"
 
 
-#port = int(os.environ.get('PORT', 5050))
-#app.run(host="0.0.0.0", port=port)
+# port = int(os.environ.get('PORT', 5050))
+# app.run(host="0.0.0.0", port=port)
 
