@@ -15,10 +15,11 @@ def getPayload(payload):
     print(type(payload))
     print(data)
     print(type(data))
+    s = str(data)
     if request.headers.get("Authorization") == "CachorroZika":
 
-        # engine = create_engine('postgresql://postgres:123456@serverioutility.hopto.org/teste')
-        # engine.execute(f"INSERT INTO cachorro (nome) VALUES ('{payload}')")
+        engine = create_engine('postgresql://postgres:123456@serverioutility.hopto.org/teste')
+        engine.execute(f"INSERT INTO cachorro (nome) VALUES ('{s}')")
         return jsonify({"payload": data})
     return "deu ruim"
 
